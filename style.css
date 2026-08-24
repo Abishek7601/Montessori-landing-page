@@ -3537,7 +3537,7 @@ ul {
    ENQUIRY CARD
    ========================================================= */
 
-.enquiry-card {
+ .enquiry-card {
     position: relative;
 
     padding: 45px;
@@ -3665,7 +3665,13 @@ ul {
 }
 .enquiry-btn-container a{
     text-align: center;
-}
+} 
+
+
+
+
+
+
 
 
 /* =========================================================
