@@ -2331,7 +2331,7 @@ ul {
    TABLET
 ========================================= */
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
 
     .about-section {
         padding: 90px 0;
@@ -2363,14 +2363,14 @@ ul {
     .section-desc {
         max-width: 700px;
     }
-}
+} */
 
 
 /* =========================================
    MOBILE
 ========================================= */
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
 
     .about-section {
         padding: 70px 0;
@@ -2459,7 +2459,7 @@ ul {
         font-size: 13px;
         line-height: 1.7;
     }
-}
+} */
 /* =========================================================
    15. TESTIMONIALS
    ========================================================= */
@@ -4200,7 +4200,7 @@ ul {
    21. RESPONSIVE — LARGE TABLET
    ========================================================= */
 
-@media (max-width: 1100px) {
+/* @media (max-width: 1100px) {
 
     .nav-list {
         gap: 17px;
@@ -4242,13 +4242,13 @@ ul {
     .why-card:nth-child(4):hover {
         transform: translateY(-10px);
     }
-}
+} */
 
 
 /* =========================================================
    22. TABLET
    ========================================================= */
-
+/* 
 @media (max-width: 900px) {
 
     .header {
@@ -4389,13 +4389,13 @@ ul {
     .footer-brand {
         grid-column: span 2;
     }
-}
+} */
 
 
 /* =========================================================
    23. MOBILE
    ========================================================= */
-
+/* 
 @media (max-width: 600px) {
 
     body {
@@ -4734,14 +4734,14 @@ ul {
 
         min-height: 50px;
     }
-}
+} */
 
 
 /* =========================================================
    24. EXTRA SMALL DEVICES
    ========================================================= */
 
-@media (max-width: 380px) {
+/* @media (max-width: 380px) {
 
     .logo-text {
         font-size: 0.82rem;
@@ -4777,7 +4777,7 @@ ul {
     .floating-card .level {
         font-size: 0.5rem;
     }
-}
+} */
 
 
 /* =========================================================
@@ -4796,7 +4796,7 @@ ul {
    26. REDUCED MOTION
    ========================================================= */
 
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
 
     *,
     *::before,
@@ -4809,7 +4809,7 @@ ul {
 
         transition-duration: 0.01ms !important;
     }
-}
+} */
 
 
 
