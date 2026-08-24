@@ -4811,3 +4811,194 @@ ul {
     }
 }
 
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+*{
+    box-sizing:border-box;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:0 18px;
+}
+
+/* ---------- TABLET ---------- */
+
+@media (max-width:991px){
+
+.hero-grid,
+.about-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+    text-align:center;
+}
+
+.hero-content{
+    order:2;
+}
+
+.hero-visual{
+    order:1;
+}
+
+.gallery-grid,
+.features-grid,
+.footer-grid,
+.form-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.editorial-title{
+    font-size:2rem;
+}
+
+.hero-title{
+    font-size:2.3rem;
+}
+
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width:768px){
+
+body{
+    overflow-x:hidden;
+}
+
+.nav-container{
+    flex-direction:column;
+    gap:15px;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero-section{
+    padding:70px 0 40px;
+}
+
+.hero-grid,
+.about-grid,
+.gallery-grid,
+.features-grid,
+.footer-grid,
+.form-grid{
+    grid-template-columns:1fr;
+}
+
+.hero-content,
+.about-content{
+    text-align:center;
+}
+
+.hero-title{
+    font-size:1.9rem;
+    line-height:1.3;
+}
+
+.editorial-title{
+    font-size:1.7rem;
+}
+
+.gallery-card,
+.feature-card{
+    transform:none !important;
+}
+
+.gallery-card img{
+    width:100%;
+    border-radius:20px;
+}
+
+.enquiry-container{
+    padding:25px;
+    border-radius:22px;
+}
+
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea{
+    width:100%;
+}
+
+.enquiry-btn{
+    width:100%;
+}
+
+.success-message{
+    padding:10px 14px;
+    font-size:14px;
+    border-radius:10px;
+    margin-top:12px;
+}
+
+.footer{
+    text-align:center;
+}
+
+.footer-column{
+    align-items:center;
+}
+
+}
+
+/* ---------- SMALL MOBILE ---------- */
+
+@media (max-width:480px){
+
+.container{
+    padding:0 14px;
+}
+
+.hero-title{
+    font-size:1.6rem;
+}
+
+.editorial-title{
+    font-size:1.4rem;
+}
+
+.section-eyebrow{
+    font-size:12px;
+}
+
+.hero-section{
+    padding-top:60px;
+}
+
+.hero-visual img,
+.about-image-container img{
+    border-radius:18px;
+}
+
+.enquiry-container{
+    padding:18px;
+}
+
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea{
+    padding:12px;
+    font-size:15px;
+}
+
+.enquiry-btn{
+    padding:14px;
+    font-size:16px;
+}
+
+}
+
