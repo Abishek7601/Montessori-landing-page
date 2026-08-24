@@ -2331,7 +2331,7 @@ ul {
    TABLET
 ========================================= */
 
-/* @media (max-width: 1000px) {
+ @media (max-width: 1000px) {
 
     .about-section {
         padding: 90px 0;
@@ -2363,14 +2363,14 @@ ul {
     .section-desc {
         max-width: 700px;
     }
-} */
+} 
 
 
 /* =========================================
    MOBILE
 ========================================= */
 
-/* @media (max-width: 600px) {
+ @media (max-width: 600px) {
 
     .about-section {
         padding: 70px 0;
@@ -2459,7 +2459,7 @@ ul {
         font-size: 13px;
         line-height: 1.7;
     }
-} */
+} 
 /* =========================================================
    15. TESTIMONIALS
    ========================================================= */
@@ -4200,7 +4200,7 @@ ul {
    21. RESPONSIVE — LARGE TABLET
    ========================================================= */
 
-/* @media (max-width: 1100px) {
+ @media (max-width: 1100px) {
 
     .nav-list {
         gap: 17px;
@@ -4242,13 +4242,13 @@ ul {
     .why-card:nth-child(4):hover {
         transform: translateY(-10px);
     }
-} */
+} 
 
 
 /* =========================================================
    22. TABLET
    ========================================================= */
-/* 
+
 @media (max-width: 900px) {
 
     .header {
@@ -4389,13 +4389,13 @@ ul {
     .footer-brand {
         grid-column: span 2;
     }
-} */
+} 
 
 
 /* =========================================================
    23. MOBILE
    ========================================================= */
-/* 
+
 @media (max-width: 600px) {
 
     body {
@@ -4734,14 +4734,14 @@ ul {
 
         min-height: 50px;
     }
-} */
+} 
 
 
 /* =========================================================
    24. EXTRA SMALL DEVICES
    ========================================================= */
 
-/* @media (max-width: 380px) {
+@media (max-width: 380px) {
 
     .logo-text {
         font-size: 0.82rem;
@@ -4777,7 +4777,7 @@ ul {
     .floating-card .level {
         font-size: 0.5rem;
     }
-} */
+}
 
 
 /* =========================================================
@@ -4796,7 +4796,7 @@ ul {
    26. REDUCED MOTION
    ========================================================= */
 
-/* @media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
 
     *,
     *::before,
@@ -4809,7 +4809,7 @@ ul {
 
         transition-duration: 0.01ms !important;
     }
-} */
+}
 
 
 
@@ -4823,850 +4823,3 @@ ul {
    ========================================================= */
 
 /* Prevent horizontal overflow everywhere */
-html,
-body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-}
-
-
-/* =========================================================
-   TABLET — 901px TO 1100px
-   ========================================================= */
-
-@media (max-width: 1100px) {
-
-    .hero-grid {
-        grid-template-columns: 1fr 0.9fr;
-        gap: 25px;
-    }
-
-    .hero-visual-wrapper {
-        width: 100%;
-        min-width: 0;
-    }
-
-    .hero-image-container {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .programs-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .why-grid,
-    .asymmetric-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-
-/* =========================================================
-   TABLET — 901px AND BELOW
-   ========================================================= */
-
-@media (max-width: 900px) {
-
-    .container {
-        width: min(92%, 700px);
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /* ---------- HEADER ---------- */
-
-    .nav-container {
-        width: 100%;
-    }
-
-    /* ---------- HERO ---------- */
-
-    .hero-section {
-        padding-top: 115px;
-        padding-bottom: 70px;
-    }
-
-    .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 45px;
-    }
-
-    .hero-content {
-        width: 100%;
-        max-width: 700px;
-    }
-
-    .hero-visual-wrapper {
-        width: 100%;
-        min-height: 500px;
-        margin: 0 auto;
-    }
-
-    .hero-image-container {
-        width: min(90%, 540px);
-        margin: 0 auto;
-    }
-
-    /* ---------- AGE CARDS ---------- */
-
-    .floating-card {
-        z-index: 5;
-    }
-
-    /* ---------- OTHER GRIDS ---------- */
-
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .trust-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .programs-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .footer-top {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-/* =========================================================
-   MOBILE — 600px AND BELOW
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-    html {
-        scroll-padding-top: 75px;
-    }
-
-    body {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    .container {
-        width: calc(100% - 30px);
-        max-width: 520px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-
-    /* =====================================================
-       HEADER
-       ===================================================== */
-
-    .header {
-        width: 100%;
-    }
-
-    .nav-container {
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .nav-list {
-        left: 4%;
-        width: 92%;
-        max-width: none;
-    }
-
-
-    /* =====================================================
-       HOME / HERO
-       ===================================================== */
-
-    .hero-section {
-        width: 100%;
-        min-height: auto;
-        padding: 105px 0 65px;
-    }
-
-    .hero-grid {
-        width: 100%;
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .hero-content {
-        width: 100%;
-        min-width: 0;
-        text-align: left;
-    }
-
-    .hero-content .editorial-title {
-        max-width: 100%;
-        overflow-wrap: break-word;
-    }
-
-    .hero-points-list {
-        width: 100%;
-        grid-template-columns: 1fr;
-    }
-
-    .hero-ctas {
-        width: 100%;
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .hero-ctas .btn {
-        width: 100%;
-        max-width: 100%;
-    }
-
-
-    /* =====================================================
-       HERO IMAGE
-       ===================================================== */
-
-    .hero-visual-wrapper {
-        position: relative;
-        width: 100%;
-        min-height: 420px;
-        margin: 0;
-        padding: 0;
-    }
-
-    .hero-image-container {
-        position: relative;
-        width: calc(100% - 40px);
-        max-width: 480px;
-        margin: 0 auto;
-        overflow: hidden;
-
-        /* NORMAL STRAIGHT IMAGE BORDER */
-        border-radius: 24px !important;
-
-        transform: none !important;
-    }
-
-    .hero-image-container img {
-        width: 100%;
-        height: auto;
-        min-height: 300px;
-        max-height: 430px;
-        object-fit: cover;
-        display: block;
-    }
-
-
-    /* =====================================================
-       ⭐ HOME PAGE AGE CARDS
-       3–6 / 6–9 / 9–12 YEARS
-       ===================================================== */
-
-    .hero-visual-wrapper .floating-card {
-        position: absolute !important;
-
-        width: auto;
-        min-width: 120px;
-        max-width: 145px;
-
-        padding: 10px 12px;
-
-        border-radius: 14px;
-
-        z-index: 20;
-
-        transform: none !important;
-    }
-
-    /* 3–6 YEARS */
-
-    .hero-visual-wrapper .floating-card:nth-of-type(1) {
-        top: 10px !important;
-        left: 0 !important;
-        right: auto !important;
-        bottom: auto !important;
-    }
-
-    /* 6–9 YEARS */
-
-    .hero-visual-wrapper .floating-card:nth-of-type(2) {
-        top: 43% !important;
-        right: 0 !important;
-        left: auto !important;
-        bottom: auto !important;
-    }
-
-    /* 9–12 YEARS */
-
-    .hero-visual-wrapper .floating-card:nth-of-type(3) {
-        bottom: 5px !important;
-        left: 8% !important;
-        right: auto !important;
-        top: auto !important;
-    }
-
-    .hero-visual-wrapper .floating-card .age {
-        display: block;
-        font-size: 0.78rem;
-        line-height: 1.2;
-        white-space: nowrap;
-    }
-
-    .hero-visual-wrapper .floating-card .level {
-        display: block;
-        margin-top: 3px;
-        font-size: 0.58rem;
-        line-height: 1.2;
-    }
-
-
-    /* =====================================================
-       TRUST SECTION
-       ===================================================== */
-
-    .trust-strip {
-        width: 100%;
-    }
-
-    .trust-grid {
-        width: 100%;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .trust-metric-box {
-        min-width: 0;
-        padding: 18px 8px;
-    }
-
-    .trust-number {
-        font-size: 1.5rem;
-    }
-
-    .trust-label {
-        font-size: 0.58rem;
-        line-height: 1.3;
-    }
-
-
-    /* =====================================================
-       SECTION SPACING
-       ===================================================== */
-
-    .placement-section,
-    .why-section,
-    .environment-section,
-    .programs-section,
-    .future-section,
-    .about-section,
-    .testimonials-section,
-    .enquiry-section {
-        width: 100%;
-        padding: 65px 0;
-    }
-
-
-    /* =====================================================
-       SECTION TITLES
-       ===================================================== */
-
-    .editorial-title {
-        max-width: 100%;
-        font-size: clamp(1.8rem, 8vw, 2.6rem);
-        line-height: 1.2;
-        overflow-wrap: break-word;
-    }
-
-    .section-desc {
-        max-width: 100%;
-        font-size: 0.88rem;
-        line-height: 1.65;
-    }
-
-
-    /* =====================================================
-       LEARNING / IMAGE CARDS
-       ===================================================== */
-
-    .asymmetric-grid {
-        width: 100%;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .why-card {
-        width: 100%;
-        min-height: 360px;
-        transform: none !important;
-    }
-
-    .why-card:nth-child(1),
-    .why-card:nth-child(2),
-    .why-card:nth-child(3),
-    .why-card:nth-child(4) {
-        transform: none !important;
-    }
-
-    .why-card:hover,
-    .why-card:nth-child(1):hover,
-    .why-card:nth-child(2):hover,
-    .why-card:nth-child(3):hover,
-    .why-card:nth-child(4):hover {
-        transform: translateY(-5px) !important;
-    }
-
-    .why-card img,
-    .why-card-img {
-        width: 100%;
-        max-width: 100%;
-        object-fit: cover;
-    }
-
-
-    /* =====================================================
-       PROGRAMS
-       ===================================================== */
-
-    .programs-grid {
-        width: 100%;
-        grid-template-columns: 1fr;
-        gap: 22px;
-    }
-
-    .program-card {
-        width: 100%;
-        min-width: 0;
-    }
-
-    .program-card-img {
-        width: 100%;
-        height: 230px;
-        overflow: hidden;
-    }
-
-    .program-card-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .program-card-body {
-        width: 100%;
-    }
-
-    .program-title {
-        font-size: 1.35rem;
-    }
-
-    .program-desc {
-        min-height: auto;
-        font-size: 0.9rem;
-    }
-
-
-    /* =====================================================
-       ENVIRONMENT
-       ===================================================== */
-
-    .env-visual-container {
-        width: 100%;
-        min-height: 420px;
-        overflow: hidden;
-    }
-
-    .env-visual-container > img {
-        width: 100%;
-        height: 420px;
-        object-fit: cover;
-    }
-
-    .env-label {
-        max-width: 110px;
-        font-size: 0.52rem;
-        line-height: 1.2;
-    }
-
-
-    /* =====================================================
-       ABOUT
-       ===================================================== */
-
-    .about-grid {
-        width: 100%;
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .about-image-container {
-        width: 100%;
-    }
-
-    .about-image-container img {
-        width: 100%;
-        min-height: 320px;
-        max-height: 500px;
-        object-fit: cover;
-    }
-
-    .about-badge {
-        width: 105px;
-        height: 105px;
-        right: 5px;
-        bottom: 15px;
-    }
-
-
-    /* =====================================================
-       TESTIMONIAL
-       ===================================================== */
-
-    .testimonial-card-editorial {
-        width: 100%;
-        grid-template-columns: 1fr;
-    }
-
-    .test-text-content {
-        padding: 25px 20px;
-    }
-
-    .test-video-container,
-    .test-video-container iframe {
-        width: 100%;
-        min-height: 250px;
-    }
-
-
-    /* =====================================================
-       ENQUIRY FORM
-       ===================================================== */
-
-    .enquiry-card {
-        width: 100%;
-        max-width: 100%;
-        padding: 22px 16px;
-        border-radius: 20px;
-    }
-
-    .enquiry-card form {
-        width: 100%;
-    }
-
-    .enquiry-card input,
-    .enquiry-card select,
-    .enquiry-card textarea {
-        width: 100%;
-        max-width: 100%;
-        font-size: 16px;
-    }
-
-    .enquiry-card textarea {
-        min-height: 120px;
-    }
-
-    .enquiry-card button,
-    .enquiry-btn {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    /* Compact success message */
-
-    .success-message {
-        width: 100%;
-        max-width: 100%;
-        padding: 9px 12px;
-        margin-top: 10px;
-        font-size: 13px;
-        line-height: 1.4;
-        border-radius: 10px;
-    }
-
-
-    /* =====================================================
-       FOOTER
-       ===================================================== */
-
-    .footer-top {
-        width: 100%;
-        grid-template-columns: 1fr;
-        gap: 28px;
-    }
-
-    .footer-brand {
-        grid-column: auto;
-    }
-
-    .footer-bottom {
-        width: 100%;
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
-    }
-
-}
-
-
-/* =========================================================
-   SMALL MOBILE — 480px
-   ========================================================= */
-
-@media (max-width: 480px) {
-
-    .container {
-        width: calc(100% - 24px);
-    }
-
-    .hero-section {
-        padding-top: 95px;
-        padding-bottom: 55px;
-    }
-
-    .hero-visual-wrapper {
-        min-height: 390px;
-    }
-
-    .hero-image-container {
-        width: calc(100% - 35px);
-        border-radius: 20px !important;
-    }
-
-    .hero-image-container img {
-        min-height: 270px;
-        max-height: 350px;
-    }
-
-
-    /* Age cards become slightly smaller */
-
-    .hero-visual-wrapper .floating-card {
-        min-width: 105px;
-        max-width: 125px;
-        padding: 8px 9px;
-        border-radius: 11px;
-    }
-
-    .hero-visual-wrapper .floating-card .age {
-        font-size: 0.68rem;
-    }
-
-    .hero-visual-wrapper .floating-card .level {
-        font-size: 0.50rem;
-    }
-
-    /* 3–6 */
-
-    .hero-visual-wrapper .floating-card:nth-of-type(1) {
-        top: 5px !important;
-        left: 0 !important;
-    }
-
-    /* 6–9 */
-
-    .hero-visual-wrapper .floating-card:nth-of-type(2) {
-        top: 42% !important;
-        right: 0 !important;
-    }
-
-    /* 9–12 */
-
-    .hero-visual-wrapper .floating-card:nth-of-type(3) {
-        bottom: 0 !important;
-        left: 5% !important;
-    }
-
-
-    .trust-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .trust-metric-box {
-        padding: 15px 5px;
-    }
-
-    .trust-number {
-        font-size: 1.35rem;
-    }
-
-    .editorial-title {
-        font-size: 1.75rem;
-    }
-
-    .why-card {
-        min-height: 330px;
-    }
-
-    .program-card-img {
-        height: 210px;
-    }
-
-    .enquiry-card {
-        padding: 18px 14px;
-    }
-}
-
-
-/* =========================================================
-   VERY SMALL MOBILE — 380px
-   ========================================================= */
-
-@media (max-width: 380px) {
-
-    .container {
-        width: calc(100% - 20px);
-    }
-
-    .hero-section {
-        padding-top: 90px;
-    }
-
-    .hero-visual-wrapper {
-        min-height: 360px;
-    }
-
-    .hero-image-container {
-        width: calc(100% - 30px);
-    }
-
-    .hero-image-container img {
-        min-height: 245px;
-    }
-
-    .hero-visual-wrapper .floating-card {
-        min-width: 92px;
-        max-width: 108px;
-        padding: 7px 8px;
-    }
-
-    .hero-visual-wrapper .floating-card .age {
-        font-size: 0.61rem;
-    }
-
-    .hero-visual-wrapper .floating-card .level {
-        font-size: 0.46rem;
-    }
-
-    .hero-visual-wrapper .floating-card:nth-of-type(1) {
-        left: -2px !important;
-    }
-
-    .hero-visual-wrapper .floating-card:nth-of-type(2) {
-        right: -2px !important;
-    }
-
-    .hero-visual-wrapper .floating-card:nth-of-type(3) {
-        left: 3% !important;
-    }
-
-    .hero-section .editorial-title {
-        font-size: 1.7rem !important;
-    }
-
-    .program-title {
-        font-size: 1.2rem;
-    }
-
-    .program-desc {
-        font-size: 0.84rem;
-    }
-
-    .enquiry-card {
-        padding: 16px 12px;
-    }
-}
-
-
-/* =========================================================
-   LANDSCAPE MOBILE
-   ========================================================= */
-
-@media (max-height: 500px) and (orientation: landscape) {
-
-    .hero-section {
-        padding-top: 90px;
-        padding-bottom: 40px;
-    }
-
-    .hero-grid {
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-    }
-
-    .hero-visual-wrapper {
-        min-height: 330px;
-    }
-
-    .hero-image-container img {
-        max-height: 300px;
-    }
-
-    .hero-visual-wrapper .floating-card {
-        transform: scale(0.85) !important;
-    }
-}
-
-
-/* =========================================================
-   TOUCH DEVICES
-   ========================================================= */
-
-@media (hover: none) and (pointer: coarse) {
-
-    .why-card:hover,
-    .program-card:hover,
-    .hero-image-container:hover {
-        transform: none !important;
-    }
-
-    .hero-image-container:hover img {
-        transform: none !important;
-    }
-}
-
-
-/* =========================================================
-   FINAL SAFETY — PREVENT OVERFLOW
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-    section,
-    header,
-    footer,
-    main,
-    .container,
-    .hero-grid,
-    .hero-content,
-    .hero-visual-wrapper,
-    .about-grid,
-    .programs-grid,
-    .program-card,
-    .why-card,
-    .enquiry-card {
-        max-width: 100%;
-    }
-
-    table {
-        display: block;
-        max-width: 100%;
-        overflow-x: auto;
-    }
-
-    iframe,
-    video {
-        max-width: 100%;
-    }
-}
-
