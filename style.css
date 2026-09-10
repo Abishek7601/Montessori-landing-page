@@ -4248,6 +4248,12 @@ ul {
     .why-card:nth-child(4):hover {
         transform: translateY(-10px);
     }
+
+        .placement-slide img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
 } 
 
 
