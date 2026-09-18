@@ -19,6 +19,11 @@
     
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230D2670'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='%23FFC400' font-family='Georgia' font-weight='800'%3ET%3C/text%3E%3C/svg%3E">
+
+    <!-- Google fonts (DiYES Typography) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
@@ -27,9 +32,16 @@
 </head>
 <body>
 
-    <!-- ==========================================
-         01 — FLOATING HEADER
-         ========================================= -->
+    <!-- Ambient Dynamic Lighting Blobs -->
+
+    <div class="ambient-light-bg" aria-hidden="true">
+        <div class="ambient-blob blob-1"></div>
+        <div class="ambient-blob blob-2"></div>
+        <div class="ambient-blob blob-3"></div>
+    </div>
+
+         <!-- 01 — FLOATING HEADER -->
+  
     <header class="header" id="header">
         <div class="container nav-container">
             <a href="#home" class="logo-wrapper">
@@ -46,7 +58,7 @@
                     <li><a href="#placements" class="nav-link">Placements</a></li>
                     <li><a href="#about" class="nav-link">About Us</a></li>
                     <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-                    <!-- <li><a href="#campus" class="nav-link">Career Gallery</a></li> -->
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
@@ -90,6 +102,7 @@
                 </p>
                 
                 <!-- Bullet points -->
+
                 <div class="hero-points-list">
                     <div class="hero-point-item">
                         <span class="hero-point-check">✓</span> 150 Days Professional Training
@@ -124,8 +137,8 @@
                 <!-- <div class="floating-card" style="top: 12%; left: -8%;">
                     <span class="age">3–6 Years</span>
                     <span class="level">Early Years</span>
-                </div> -->
-                <!-- <div class="floating-card" style="bottom: 35%; right: -8%;">
+                </div>
+                <div class="floating-card" style="bottom: 35%; right: -8%;">
                     <span class="age">6–9 Years</span>
                     <span class="level">Primary</span>
                 </div> -->
@@ -227,6 +240,7 @@
             </p>
             
             <div class="asymmetric-grid">
+
                 <!-- CARD 1 -->
                 <div class="why-card">
                     <img src="images/playing.avif" alt="Independence in Learning" class="why-card-img">
@@ -234,6 +248,7 @@
                     <h3 class="why-card-title">INDEPENDENCE</h3>
                     <p class="why-card-desc">Children learn to make choices and take responsibility for their work.</p>
                 </div>
+
                 <!-- CARD 2 -->
                 <div class="why-card">
                     <img src="images/child.avif" alt="Hands-on Discovery" class="why-card-img">
@@ -241,6 +256,7 @@
                     <h3 class="why-card-title">DISCOVERY</h3>
                     <p class="why-card-desc">Hands-on materials turn curiosity into meaningful learning.</p>
                 </div>
+
                 <!-- CARD 3 -->
                 <div class="why-card">
                     <img src="images/children 4.webp" alt="Focus and Concentration" class="why-card-img">
@@ -248,6 +264,7 @@
                     <h3 class="why-card-title">CONCENTRATION</h3>
                     <p class="why-card-desc">Children develop focus through uninterrupted work.</p>
                 </div>
+
                 <!-- CARD 4 -->
                 <div class="why-card">
                     <img src="images/toys.avif" alt="Self-Assured Capable Development" class="why-card-img">
@@ -382,17 +399,19 @@
             </p>
             
             <div class="interactive-node-graph">
+
                 <!-- SVG lines connecting nodes to the center child node -->
                 <svg class="node-graph-svg" viewBox="0 0 900 550">
                     <line x1="450" y1="275" x2="215" y2="115" class="graph-path-line" id="line-curiosity"></line>
                     <line x1="450" y1="275" x2="685" y2="115" class="graph-path-line" id="line-creativity"></line>
                     <line x1="450" y1="275" x2="160" y2="275" class="graph-path-line" id="line-confidence"></line>
-                    <line x1="450" y1="275" x2="740" y2="275" class="graph-path-line" id="line-independence"></line>
+                    <line x1="450" y1="275" x2="740 " y2="275" class="graph-path-line" id="line-independence"></line>
                     <line x1="450" y1="275" x2="275" y2="435" class="graph-path-line" id="line-problem"></line>
                     <line x1="450" y1="275" x2="625" y2="435" class="graph-path-line" id="line-empathy"></line>
                 </svg>
                 
                 <div class="node-graph-nodes">
+
                     <!-- Central Node -->
                     <div class="center-child-node">
                         <div class="center-child-glow"></div>
@@ -442,14 +461,15 @@
                 
                 <!-- Expander Accordion -->
                 <div class="about-accordion">
+
                     <!-- Pillar 1 -->
                     <div class="accordion-item active">
                         <button class="accordion-trigger">
                             01 BEST MONTESSORI EDUCATION
                             <!-- <span class="accordion-icon">+</span> -->
-                        </button>
-                        
+                        </button>   
                     </div>
+
                     <!-- Pillar 2 -->
                     <div class="accordion-item">
                         <button class="accordion-trigger">
@@ -460,6 +480,7 @@
                             <p>A rigorous activity-based curriculum combining history, structural study, material workshop modules, and regular evaluation tracks.</p>
                         </div>
                     </div>
+
                     <!-- Pillar 3 -->
                     <div class="accordion-item">
                         <button class="accordion-trigger">
@@ -470,6 +491,7 @@
                             <p>Learn from certified, highly experienced Montessori instructors who have guided hundreds of teachers into career placements across schools.</p>
                         </div>
                     </div>
+
                     <!-- Pillar 4 -->
                     <div class="accordion-item">
                         <button class="accordion-trigger">
@@ -496,6 +518,7 @@
             <div class="testimonials-slider-container">
                 <div class="testimonials-track-wrapper">
                     <div class="testimonials-track" id="testimonialsTrack">
+
                         <!-- TESTIMONIAL 1 -->
                         <div class="testimonial-slide">
                             <div class="testimonial-card-editorial">
@@ -579,11 +602,93 @@
     </section>
 
    
+     <!-- FAQ SECTION (Montessori Teacher Training FAQ) -->
+
+     <section class="faq-section" id="faq">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3.5rem;">
+                <span class="section-eyebrow">Frequently Asked Questions</span>
+                <h2 class="editorial-title">MONTESSORI TRAINING FAQ</h2>
+                <p class="section-desc" style="max-width: 650px; margin: 0 auto;">Everything you need to know about our 150 Days Montessori Teacher Training course, eligibility, Certification, and career Placement.</p>
+            </div>
+
+            <div class="faq-container">
+
+                <!-- FAQ Item 1 -->
+                <div class="faq-item active">
+                    <button class="faq-trigger" aria-expanded="true">
+                        <span>What is the duration of the Montessori Teacher Training course?</span>
+                        <span class="faq-icon">−</span>
+                    </button>
+                    <div class="faq-content">
+                        <p>The course duration is 150 days. It is designed to offer comprehensive practical training, material handling workshops, child psychology foundations, and school observation assignments.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-trigger" aria-expanded="false">
+                        <span>What are the eligibility criteria to join this course?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-content">
+                        <p>Anyone who has completed 10th, 12th, or any Graduation / Diploma and possesses a passion for early child education can join the course. No prior teaching experience is required.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-trigger" aria-expanded="false">
+                        <span>Is the course certification government recognized?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-content">
+                        <p>Yes, Sun Group of Institutions is licensed under the Ministry of External Affairs, Government of India. The certification is recognized for teaching careers across India and internationally.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-trigger" aria-expanded="false">
+                        <span>Do you provide placement assistance after course completion?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-content">
+                        <p>Yes, we provide 100% placement assistance. Our dedicated placement cell assists graduates with resume building, mock interviews, and direct interviews with top Montessori & international schools.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <button class="faq-trigger" aria-expanded="false">
+                        <span>What age levels does the training cover?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-content">
+                        <p>The curriculum prepares educators across three core developmental stages: Early Years (3–6 years), Primary Module (6–9 years), and Elementary Module (9–12 years).</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                    <button class="faq-trigger" aria-expanded="false">
+                        <span>How is the practical activity-based training conducted</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-content">
+                        <p>Students receive hands-on practice with authentic Montessori wooden apparatus, sensorial tools, and math blocks in our fully equipped Montessori lab under expert guidance.</p>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </section>
+
 
     
     <section class="enquiry-section" id="contact">
         <div class="container">
             <div class="about-grid" style="align-items: start;">
+
                 <!-- Contact info (Left) -->
                 <div style="margin-top: 1rem;">
                     <span class="section-eyebrow">Start Your Career</span>
@@ -658,12 +763,12 @@
                                 <label for="message">Message / Notes (Optional)</label>
                             </div>
                             
-    <div class="enquiry-btn-container" style="margin-top: 1rem; text-align: left;">
-         <button type="submit" class="btn btn-terracotta" style="width: 100%;">
-            SEND ENQUIRY</button>
-         <p class="form-privacy-note">🔒 Your details are safe with us. Our counselor will contact you shortly.</p> 
-        </div>
-</div>
+                         <div class="enquiry-btn-container" style="margin-top: 1rem; text-align: left;">
+                                  <button type="submit" class="btn btn-terracotta" style="width: 100%;">
+                                SEND ENQUIRY</button>
+                              <p class="form-privacy-note">🔒 Your details are safe with us. Our counselor will contact you shortly.</p> 
+                            </div>
+                          </div>
                         </div>
                     </form>
                     
@@ -720,7 +825,7 @@
                         <li class="footer-link-item"><a href="#placements">Success Stories</a></li>
                         <li class="footer-link-item"><a href="#about">About Sun Group</a></li>
                         <li class="footer-link-item"><a href="#testimonials">Testimonials</a></li>
-                        
+                        <li class="footer-link-item"><a href="#faq">Montessori FAQ</a></li>
                         <li class="footer-link-item"><a href="#contact">Contact Details</a></li>
                     </ul>
                 </div>
@@ -757,20 +862,37 @@
         </div>
     </footer>
 
-   
+        <!-- Floating Quick Actions (Desktop & Mobile) -->
     <div class="floating-triggers-wrapper">
-        <a href="https://wa.me/918848121824" target="_blank" class="floating-action-circle fac-whatsapp" title="Chat with Us on WhatsApp">
-            <span>💬</span>
+        <a href="tel:+918848121824" class="floating-action-circle fac-phone" aria-label="Call us">
+            <svg class="fac-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.98.8l1.02 4.6a1 1 0 01-.27.94l-1.7 1.7a15.05 15.05 0 006.7 6.7l1.7-1.7a1 1 0 01.94-.27l4.6 1.02a1 1 0 01.8.98V19a2 2 0 01-2 2h-1C8.82 21 3 15.18 3 8V5z"></path></svg>
         </a>
-        <a href="tel:+918848121824" class="floating-action-circle fac-phone" title="Call Counselors">
-            <span>☎</span>
+        <a href="https://wa.me/918848121824?text=Hi!%20I'd%20like%20to%20know%20more%20about%20Montessori%20Teacher%20Training." target="_blank" rel="noopener noreferrer" class="floating-action-circle fac-whatsapp" aria-label="Chat on WhatsApp">
+            <svg class="fac-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path><path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.9.53 3.75 1.535 5.36L2 22l4.75-1.485A9.96 9.96 0 0012.001 22C17.523 22 22 17.523 22 12S17.523 2 12.001 2zm0 18.14c-1.688 0-3.34-.454-4.782-1.313l-.343-.204-3.235 1.01 1.028-3.16-.223-.353A8.11 8.11 0 013.86 12c0-4.494 3.647-8.14 8.141-8.14 4.494 0 8.14 3.646 8.14 8.14 0 4.494-3.646 8.14-8.14 8.14z"></path></svg>
+        </a>
+        <a href="#contact" class="floating-action-circle fac-enquire" aria-label="Enquire now">
+            <svg class="fac-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
         </a>
     </div>
 
-    <!-- Mobile Bottom Sticky CTA -->
-    <div class="bottom-sticky-cta-mobile">
-        <a href="#contact" class="btn btn-terracotta">ENQUIRE NOW →</a>
+        <!-- Mobile Bottom Sticky Bar (DiYES Style) -->
+    <div class="bottom-sticky-bar-mobile">
+        <div class="mobile-bar-grid">
+            <a href="tel:+918848121824" class="mobile-bar-btn mobile-bar-call">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.98.8l1.02 4.6a1 1 0 01-.27.94l-1.7 1.7a15.05 15.05 0 006.7 6.7l1.7-1.7a1 1 0 01.94-.27l4.6 1.02a1 1 0 01.8.98V19a2 2 0 01-2 2h-1C8.82 21 3 15.18 3 8V5z"></path></svg>
+                <span>Call Now</span>
+            </a>
+            <a href="https://wa.me/918848121824?text=Hi!%20I'd%20like%20to%20know%20more%20about%20Montessori%20Teacher%20Training." target="_blank" rel="noopener noreferrer" class="mobile-bar-btn mobile-bar-wa">
+                <svg fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path><path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.9.53 3.75 1.535 5.36L2 22l4.75-1.485A9.96 9.96 0 0012.001 22C17.523 22 22 17.523 22 12S17.523 2 12.001 2zm0 18.14c-1.688 0-3.34-.454-4.782-1.313l-.343-.204-3.235 1.01 1.028-3.16-.223-.353A8.11 8.11 0 013.86 12c0-4.494 3.647-8.14 8.141-8.14 4.494 0 8.14 3.646 8.14 8.14 0 4.494-3.646 8.14-8.14 8.14z"></path></svg>
+                <span>WhatsApp</span>
+            </a>
+            <a href="#contact" class="mobile-bar-btn mobile-bar-enquire">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                <span>Enquire</span>
+            </a>
+        </div>
     </div>
+
 
     
    <script>
@@ -958,8 +1080,8 @@ window.addEventListener(
 checkTrustVisibility();
 
 
-/*
-   PLACEMENT SLIDER */
+
+  /* PLACEMENT SLIDER */
   
 
 const placementTrack =
@@ -1053,9 +1175,9 @@ if (placementTrack) {
 }
 
 
-/*
-   ENVIRONMENT INTERACTIVE NODES
-   */
+
+  /* ENVIRONMENT INTERACTIVE NODES */
+   
 
 const envNodes =
     document.querySelectorAll(
@@ -1093,9 +1215,9 @@ envNodes.forEach(node => {
 });
 
 
-/* 
-   CUSTOM INFO POPUP
-   */
+ 
+ /*  CUSTOM INFO POPUP */
+   
 
 function showInfoPopup(title, text) {
 
@@ -1198,9 +1320,9 @@ function showInfoPopup(title, text) {
 }
 
 
-/* 
-   SKILL GRAPH
-    */
+ 
+  /* SKILL GRAPH */
+    
 
 const skillsData = {
 
@@ -1399,9 +1521,9 @@ if (skillNodes.length > 0) {
 }
 
 
-/* 
-   ACCORDION
-    */
+ 
+  /* ACCORDION */
+    
 
 const accordionItems =
     document.querySelectorAll(
@@ -1452,9 +1574,33 @@ accordionItems.forEach(item => {
 });
 
 
-/* 
-   TESTIMONIAL SLIDER
-    */
+/* FAQ ACCORDIN TOGGLE */  
+
+const faqItems = document.querySelectorAll(".faq-item");
+faqItems.forEach(item=>{
+    const trigger = item.querySelector(".faq-trigger");
+    const icon = item.querySelector(".faq-icon");
+    trigger?.addEventListener("click", ()=>{
+        const wasActive = item.classList.contains("active");
+        faqItems.forEach(other =>{
+            other.classList.remove("active");
+            const otherIcon = other.querySelector(".faq-icon");
+            if(otherIcon) otherIcon.textContent = "+";
+            other.querySelector(".faq-trigger")?.setAttribute("aria-expanded", "false");
+        });
+
+        if(!wasActive){
+            item.classList.add("active");
+            if (icon) icon.textContent = "-";
+            trigger.setAttribute("aria-expanded", "true");
+        }
+    });
+});
+
+
+
+  /* TESTIMONIAL SLIDER */
+    
 
 const testTrack =
     document.getElementById(
@@ -1551,9 +1697,9 @@ nextTest?.addEventListener(
 updateTestimonial();
 
 
-/* 
-   AUTO TESTIMONIAL
-    */
+
+  /* AUTO TESTIMONIAL */
+    
 
 let testimonialTimer;
 
@@ -1640,9 +1786,9 @@ testimonialContainer?.addEventListener(
 );
 
 
-/* 
-   SCROLL REVEAL
-    */
+ 
+  /* SCROLL REVEAL */
+   
 
 const revealSelectors = [
 
@@ -1748,16 +1894,10 @@ const GOOGLE_FORM_URL =
     "https://docs.google.com/forms/d/e/1FAIpQLScV48IfTEcoekJFf3n9DIcZ-N10Q58RY9zScXuoWMN95GVw2A/formResponse";
 
 
-/*
-   GOOGLE FORM FIELD IDs
 
-   Name:        entry.233562100
-   Phone:       entry.1622843215
-   Email:       entry.101293128
-   Education:   entry.17537142
-   City:        entry.1332623336
-   Message:     entry.584789518
-*/
+  /* GOOGLE FORM FIELD IDs */
+
+
 
 const ENTRY_IDS = {
     name: "entry.233562100",
@@ -1804,9 +1944,9 @@ const ENTRY_IDS = {
     
 
 
-/* =========================================================
-   GENERATE REFERENCE CODE
-   ========================================================= */
+
+  /* GENERATE REFERENCE CODE */
+   
 
 function generateRefCode() {
 
@@ -1822,9 +1962,9 @@ function generateRefCode() {
 }
 
 
-/* =========================================================
-   VALIDATION HELPERS
-   ========================================================= */
+
+  /* VALIDATION HELPERS */
+  
 
 function isValidEmail(email) {
 
@@ -1840,9 +1980,9 @@ function isValidPhone(phone) {
 }
 
 
-/* =========================================================
-   HANDLE ENQUIRY SUBMISSION
-   ========================================================= */
+
+ /*  HANDLE ENQUIRY SUBMISSION */
+   
 
 async function handleFormSubmit(
     event,
@@ -1900,9 +2040,8 @@ async function handleFormSubmit(
     }
 
 
-    /* =====================================================
-       GET FORM VALUES
-       ===================================================== */
+      /* GET FORM VALUES */
+     
 
     const name =
         document
@@ -2021,9 +2160,9 @@ async function handleFormSubmit(
     // }
 
 
-    /* =====================================================
-       CREATE GOOGLE FORM DATA
-       ===================================================== */
+   
+      /* CREATE GOOGLE FORM DATA */
+      
 
 
     const googleFormData =
@@ -2066,9 +2205,9 @@ async function handleFormSubmit(
     );
 
 
-    /* =====================================================
-       UI: DISABLE BUTTON + SHOW LOADING
-       ===================================================== */
+   
+      /* UI: DISABLE BUTTON + SHOW LOADING */
+       
 
     if (submitBtn) {
 
@@ -2088,9 +2227,9 @@ async function handleFormSubmit(
     );
 
 
-    /* =====================================================
-       SEND DATA TO GOOGLE FORM
-       ===================================================== */
+    
+     /*  SEND DATA TO GOOGLE FORM */
+       
 
     try {
 
@@ -2106,13 +2245,6 @@ async function handleFormSubmit(
         );
 
 
-        /*
-           Google Form uses no-cors.
-
-           Browser cannot read Google's response,
-           but Google receives the submitted data
-           and stores it in the linked Google Sheet.
-        */
 
 
         setTimeout(
@@ -2148,15 +2280,6 @@ async function handleFormSubmit(
                 }
 
 
-                /*
-                   IMPORTANT:
-
-                   WhatsApp redirect has been
-                   completely removed.
-
-                   Data will ONLY go to
-                   Google Form → Google Sheet.
-                */
 
             },
             1200
@@ -2208,9 +2331,9 @@ async function handleFormSubmit(
 }
 
 
-/* =========================================================
-   CONNECT FORM SUBMIT EVENT
-   ========================================================= */
+
+ /*  CONNECT FORM SUBMIT EVENT */
+   
 
 const enquiryForm =
     document.getElementById(
@@ -2228,9 +2351,9 @@ if (enquiryForm) {
 }
 
 
-/* =========================================================
-   KEYBOARD ESCAPE
-   ========================================================= */
+
+ /*  KEYBOARD ESCAPE */
+   
 
 document.addEventListener(
     "keydown",
@@ -2268,9 +2391,9 @@ document.addEventListener(
 );
 
 
-/* =========================================================
-   IMAGE LOADING OPTIMIZATION
-   ========================================================= */
+
+ /*  IMAGE LOADING OPTIMIZATION */
+   
 
 document
     .querySelectorAll("img")
@@ -2292,9 +2415,9 @@ document
     });
 
 
-/* =========================================================
-   KEEP HERO IMAGE IMMEDIATELY AVAILABLE
-   ========================================================= */
+
+  /* KEEP HERO IMAGE IMMEDIATELY AVAILABLE */
+   
 
 const heroImage =
     document.querySelector(
@@ -2311,10 +2434,6 @@ if (heroImage) {
 
 }
 
-
-/* =========================================================
-   END
-   ========================================================= */
 
    </script>
 </body>
