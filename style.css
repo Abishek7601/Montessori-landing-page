@@ -948,8 +948,8 @@ ul {
     position: relative;
     width: 100%;
     max-width: 900px;
-    height: 520px;
-    margin: 50px auto 0;
+    height: 480px;
+    margin: 40px auto 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1007,9 +1007,13 @@ ul {
     border: 3px solid rgba(255, 255, 255, 0.3);
 }
 
+.skill-nodes-wrapper{
+    display: contents;
+}
+
 .skill-node {
     position: absolute;
-    padding: 10px 20px;
+    padding: 11px 22px;
     border-radius: var(--radius-full);
     background: var(--bg-card);
     border: 1px solid var(--border-glass);
@@ -1034,54 +1038,103 @@ ul {
 
 /* Positions around circle */
 
-.sn-curiosity { top: 12%; left: 16%; }
-.sn-creativity { top: 12%; right: 16%; }
-.sn-confidence { top: 48%; left: 8%; transform: translateY(-50%); }
-.sn-independence { top: 48%; right: 8%; transform: translateY(-50%); }
-.sn-problem { bottom: 12%; left: 20%; }
-.sn-empathy { bottom: 12%; right: 20%; }
+.sn-curiosity { top: 8%; left: 16%; }
+.sn-creativity { top: 8%; right: 16%; }
+.sn-confidence { top: 50%; left: 6%; transform: translateY(-50%); }
+.sn-independence { top: 50%; right: 6%; transform: translateY(-50%); }
+.sn-problem { bottom: 8%; left: 16%; }
+.sn-empathy { bottom: 8%; right: 16%; }
 
 .skill-info-overlay {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    margin: 30px auto 0;
     background: rgba(10, 19, 41, 0.95);
     border: 1px solid var(--primary);
-    padding: 16px 28px;
+    padding: 20px 32px;
     border-radius: var(--radius-md);
     text-align: center;
-    max-width: 500px;
-    width: 90%;
+    max-width: 650px;
+    width: 100%;
     backdrop-filter: blur(20px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    z-index: 10;
 }
 
 .skill-info-title {
     font-family: var(--font-heading);
     font-size: 1.1rem;
     color: var(--cyan-accent);
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+    font-weight: 800;
 }
 
 .skill-info-text {
     font-size: 0.9rem;
     color: var(--text-muted);
+    line-height: 1.6;
 }
 
 
 @media (max-width: 768px) {
     .interactive-node-graph {
         height: auto;
-        min-height: 480px;
+        min-height: auto;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
     }
-    .node-graph-svg { display: none; }
-    .sn-curiosity { top: 5%; left: 5%; }
-    .sn-creativity { top: 5%; right: 5%; }
-    .sn-confidence { top: 30%; left: 2%; }
-    .sn-independence { top: 30%; right: 2%; }
-    .sn-problem { bottom: 25%; left: 5%; }
-    .sn-empathy { bottom: 25%; right: 5%; }
+
+    .node-graph-svg{
+        display: none;
+    }
+
+    .node-graph-nodes{
+        position: relative;
+        inset: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 24px;
+    }
+
+    .center-child-node{
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+
+    .skill-nodes-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        width: 100%;
+    }
+
+    .skill-node{
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: none !important;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding: 12px 10px;
+        font-size: 0.78rem;
+    }
+
+    .skill-node:hover, .skill-node.active{
+        transform: scale(1.03) !important;
+    }
+
+    .skill-info-overlay{
+        margin-top: 20px;
+        padding: 16px 20px;
+    }
+
 }
 
 
