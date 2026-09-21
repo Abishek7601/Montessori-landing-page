@@ -361,11 +361,35 @@ ul {
     }
 
     .btn-nav {
-        display: none;
+        display: inline-flex;
+        padding: 5px 8px;
+        font-size: 0.75rem;
+        letter-spacing: 0.04em;
+        margin-left: auto;
     }
 
     .menu-toggle {
         display: flex;
+        flex-shrink: 0;
+    }
+}
+
+@media(max-width: 480px){
+    .logo-text{
+        font-size: 0,95rem;
+    }
+
+    .logo-sub{
+        font-size: 0.65rem;
+    }
+
+    .logo-img{
+        height: 36px;
+    }
+
+    .btn-nav{
+        padding: 5px 7px;
+        font-size: 0.68rem;
     }
 }
 
