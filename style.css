@@ -278,17 +278,17 @@ ul {
     white-space: nowrap;
 }
 
-/* .btn-primary{
-    background: var(--primary);
-    color: var(--text-white);
+.btn-primary{
+    background: var(--text-white);
+    color: var(--text-dark);
     box-shadow: var(--shadow-blue);
-} */
+}
 
-.btn-primary:hover{
+/* .btn-primary:hover{
     background: var(--primary-hover);
     transform: translateY(-2px);
     box-shadow: 0 12px 35px rgba(37, 99, 235, 0.55);
-}
+} */
 
 .btn-secondary {
     background: rgba(255, 255, 255, 0.08);
