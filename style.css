@@ -278,11 +278,11 @@ ul {
     white-space: nowrap;
 }
 
-.btn-primary{
+/* .btn-primary{
     background: var(--primary);
     color: var(--text-white);
     box-shadow: var(--shadow-blue);
-}
+} */
 
 .btn-primary:hover{
     background: var(--primary-hover);
